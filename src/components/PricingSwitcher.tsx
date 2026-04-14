@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Check, Server, Database, Sparkles, AlertTriangle, Clock, ArrowRight, Star } from 'lucide-react'
+import { Check, Server, Database, Sparkles, AlertTriangle, Clock, ArrowRight, Star, type LucideIcon } from 'lucide-react'
 
 type TabKey = 'infogerance' | 'odoo' | 'ia'
 
@@ -16,7 +16,7 @@ interface Tier {
   highlight?: boolean
 }
 
-const tabs: { key: TabKey; label: string; icon: React.ComponentType<{ size?: number }>; desc: string }[] = [
+const tabs: { key: TabKey; label: string; icon: LucideIcon; desc: string }[] = [
   { key: 'infogerance', label: 'Infogérance IT', icon: Server, desc: 'Support & infrastructure mensuels' },
   { key: 'odoo', label: 'Odoo ERP', icon: Database, desc: 'Intégration & développement' },
   { key: 'ia', label: 'Intelligence Artificielle', icon: Sparkles, desc: 'Automatisations & agents' },
