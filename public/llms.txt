@@ -1,0 +1,60 @@
+# AROM IT & Cloud Services
+
+> Partenaire informatique suisse pour PME : infogérance IT, intégration Odoo ERP et solutions Intelligence Artificielle. Basés à Payerne et Lausanne, nous servons toute la Suisse romande depuis 2015. Données hébergées en Suisse (datacenter Montreux), forfaits transparents dès 490 CHF/mois, garantie 90 jours.
+
+## Informations clés
+
+- **Nom** : AROM IT & Cloud Services
+- **Fondation** : 2015
+- **Siège** : Payerne (Vaud), Suisse
+- **Zones servies** : Suisse romande (Vaud, Fribourg, Genève, Neuchâtel, Valais, Jura)
+- **Téléphone** : +41 26 508 32 32
+- **Email** : info@arom.ch
+- **Langues** : Français (principal), Anglais
+- **Hébergement** : Datacenter privé à Montreux (Suisse)
+
+## Services principaux
+
+### Infogérance IT & Cloud Suisse
+- **Sérénité** — 490 CHF/mois — 3 à 5 postes — support illimité, monitoring 24/7, sauvegarde Suisse
+- **Bouclier** — 990 CHF/mois — 6 à 12 postes — cybersécurité renforcée EDR, SLA 2h
+- **DSI Externalisé** — dès 1'890 CHF/mois — 15 à 30 postes — heures illimitées, stratégie incluse
+- **Tarif horaire ponctuel** : 145 CHF/h (facturation par tranche de 15 min)
+- URL : https://www.arom.ch/infogerance
+
+### Intégration Odoo ERP
+- **Odoo Starter** — 4'900 CHF — 3 modules, 4 semaines
+- **Odoo Business** — 9'900 CHF — 6 modules, 6-8 semaines (le plus populaire)
+- **Odoo Enterprise** — dès 19'900 CHF — sur mesure, 3-4 mois
+- **⚠ La licence Odoo est facturée en sus** par Odoo SA (Community gratuit · Standard ~24 CHF/user/mois · Custom ~37 CHF/user/mois)
+- URL : https://www.arom.ch/odoo
+
+### Intelligence Artificielle
+- **IA Quickstart** — 2'900 CHF — 1 cas d'usage (chatbot ou automatisation), 2-3 semaines
+- **IA Business** — 6'900 CHF — 3 cas d'usage combinés, 4-6 semaines
+- **IA Transformation** — dès 14'900 CHF — déploiement à l'échelle PME, 2-4 mois
+- Cas d'usage : chatbots, automatisation workflows, analyse prédictive, IA dans Odoo, OCR documents, résumés et recherche sémantique
+- URL : https://www.arom.ch/ia
+
+## Engagements (Grand Slam Offer)
+
+1. **Garantie Sérénité 90 jours** — remboursement intégral si insatisfaction durant les 90 premiers jours d'infogérance
+2. **SLA contractuel** — réponse sous 2h (1h sur DSI Externalisé), sinon le mois est offert
+3. **Prix publics** — aucun frais caché, aucun supplément week-end
+4. **Capacité limitée** — maximum 5 nouveaux clients infogérance par trimestre
+
+## Différenciateurs
+
+- Données hébergées en Suisse (ne quittent jamais le territoire)
+- Intégrateur Odoo certifié + certifié 3CX (téléphonie VoIP)
+- Audit initial gratuit
+- Un seul interlocuteur pour IT + ERP + IA
+
+## Pages
+
+- https://www.arom.ch/ — Vue d'ensemble des services
+- https://www.arom.ch/infogerance — Détails infogérance & tarifs
+- https://www.arom.ch/odoo — Intégration Odoo & tarifs
+- https://www.arom.ch/ia — Solutions IA & tarifs
+- https://www.arom.ch/tarifs — Tous les tarifs & garanties
+- https://www.arom.ch/#contact — Demande d'audit gratuit

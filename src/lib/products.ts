@@ -1,0 +1,360 @@
+export type ProductType = 'subscription' | 'one_time'
+export type ProductCategory = 'it-support' | 'cloud' | 'audit' | 'odoo' | 'ia' | 'formation'
+
+export interface Product {
+  id: string
+  category: ProductCategory
+  name: string
+  tagline: string
+  description: string
+  price: number
+  priceLabel: string
+  type: ProductType
+  popular?: boolean
+  features: string[]
+  cta: string
+  calendlyPath?: string
+  note?: string
+}
+
+export const PRODUCTS: Product[] = [
+  // ── IT SUPPORT ──────────────────────────────────────────────────────────
+  {
+    id: 'it-starter',
+    category: 'it-support',
+    name: 'IT Starter',
+    tagline: '1–5 utilisateurs',
+    description: 'Le support IT essentiel pour les petites équipes.',
+    price: 199,
+    priceLabel: 'CHF 199 / mois',
+    type: 'subscription',
+    features: [
+      '2h de support incluses / mois',
+      'Réponse garantie < 4h',
+      'Monitoring infrastructure de base',
+      'Mises à jour de sécurité',
+      'Portail client & tickets',
+    ],
+    cta: "S'abonner",
+    calendlyPath: 'it-onboarding',
+  },
+  {
+    id: 'it-business',
+    category: 'it-support',
+    name: 'IT Business',
+    tagline: '5–20 utilisateurs',
+    description: 'Support étendu avec interventions sur site et monitoring avancé.',
+    price: 499,
+    priceLabel: 'CHF 499 / mois',
+    type: 'subscription',
+    popular: true,
+    features: [
+      '5h de support incluses / mois',
+      'Réponse garantie < 2h',
+      'Monitoring + alertes proactives',
+      '1 visite sur site / mois',
+      'Gestion des sauvegardes',
+      'Rapport mensuel IT',
+    ],
+    cta: "S'abonner",
+    calendlyPath: 'it-onboarding',
+  },
+  {
+    id: 'it-enterprise',
+    category: 'it-support',
+    name: 'IT Enterprise',
+    tagline: '20+ utilisateurs',
+    description: 'DSI externalisé complet pour les structures exigeantes.',
+    price: 990,
+    priceLabel: 'CHF 990 / mois',
+    type: 'subscription',
+    features: [
+      '15h de support incluses / mois',
+      'Réponse garantie < 1h',
+      'Monitoring 24/7 avancé',
+      'Visites sur site illimitées',
+      'Gestion sécurité & conformité',
+      'Interlocuteur dédié',
+      'Rapport hebdomadaire',
+    ],
+    cta: "S'abonner",
+    calendlyPath: 'it-onboarding',
+  },
+
+  // ── CLOUD SUISSE ─────────────────────────────────────────────────────────
+  {
+    id: 'cloud-start',
+    category: 'cloud',
+    name: 'Cloud Start',
+    tagline: "Jusqu'à 5 utilisateurs",
+    description: 'Stockage et sauvegarde dans notre datacenter suisse de Montreux.',
+    price: 39,
+    priceLabel: 'CHF 39 / mois',
+    type: 'subscription',
+    features: [
+      '100 GB stockage Suisse',
+      '5 utilisateurs',
+      'Sauvegarde quotidienne',
+      'Accès web & desktop',
+      'Chiffrement bout en bout',
+    ],
+    cta: "S'abonner",
+  },
+  {
+    id: 'cloud-pro',
+    category: 'cloud',
+    name: 'Cloud Pro',
+    tagline: "Jusqu'à 25 utilisateurs",
+    description: 'Sauvegarde horaire et versioning pour les équipes actives.',
+    price: 89,
+    priceLabel: 'CHF 89 / mois',
+    type: 'subscription',
+    popular: true,
+    features: [
+      '500 GB stockage Suisse',
+      '25 utilisateurs',
+      'Sauvegarde horaire',
+      'Versioning 30 jours',
+      'Restauration granulaire',
+      'Sync desktop & mobile',
+    ],
+    cta: "S'abonner",
+  },
+  {
+    id: 'cloud-business',
+    category: 'cloud',
+    name: 'Cloud Business',
+    tagline: 'Utilisateurs illimités',
+    description: 'Infrastructure cloud complète pour les entreprises.',
+    price: 169,
+    priceLabel: 'CHF 169 / mois',
+    type: 'subscription',
+    features: [
+      '2 TB stockage Suisse',
+      'Utilisateurs illimités',
+      'Sauvegarde temps réel',
+      'Versioning 90 jours',
+      'Hébergement serveur inclus',
+      'SLA 99.9% garanti',
+    ],
+    cta: "S'abonner",
+  },
+
+  // ── AUDITS ───────────────────────────────────────────────────────────────
+  {
+    id: 'audit-it',
+    category: 'audit',
+    name: 'Audit IT Express',
+    tagline: 'Résultat en 48h',
+    description: "Diagnostic complet de votre infrastructure IT avec rapport détaillé.",
+    price: 390,
+    priceLabel: 'CHF 390 — paiement unique',
+    type: 'one_time',
+    features: [
+      'Analyse de votre infrastructure',
+      'Détection des vulnérabilités',
+      'Rapport écrit complet',
+      'Appel de restitution 1h',
+      'Plan de recommandations priorisé',
+    ],
+    cta: 'Réserver mon audit',
+    calendlyPath: 'audit-it',
+  },
+  {
+    id: 'audit-cyber',
+    category: 'audit',
+    name: 'Audit Cybersécurité',
+    tagline: 'Protection maximale',
+    description: 'Tests de pénétration, analyse des risques et plan de remédiation.',
+    price: 690,
+    priceLabel: 'CHF 690 — paiement unique',
+    type: 'one_time',
+    popular: true,
+    features: [
+      'Tests de vulnérabilité réseau',
+      'Analyse phishing & social engineering',
+      'Rapport de risques certifié',
+      'Plan de remédiation chiffré',
+      'Appel de restitution 2h',
+      'Suivi 30 jours inclus',
+    ],
+    cta: 'Réserver mon audit',
+    calendlyPath: 'audit-cyber',
+  },
+
+  // ── ODOO ─────────────────────────────────────────────────────────────────
+  {
+    id: 'odoo-starter',
+    category: 'odoo',
+    name: 'Odoo Starter',
+    tagline: "PME jusqu'à 10 users",
+    description: 'Implémentation rapide de vos 2 modules Odoo prioritaires.',
+    price: 2990,
+    priceLabel: "CHF 2'990 — projet",
+    type: 'one_time',
+    features: [
+      '2 modules Odoo au choix',
+      'Migration données de base',
+      'Formation 4h de vos équipes',
+      'Support technique 3 mois',
+      'Démarrage sous 2 semaines',
+    ],
+    cta: 'Démarrer avec Odoo',
+    calendlyPath: 'odoo-discovery',
+  },
+  {
+    id: 'odoo-pme',
+    category: 'odoo',
+    name: 'Odoo PME',
+    tagline: 'La solution complète',
+    description: "ERP complet avec 5 modules, migration intégrale et formation approfondie.",
+    price: 6990,
+    priceLabel: "CHF 6'990 — projet",
+    type: 'one_time',
+    popular: true,
+    features: [
+      '5 modules Odoo au choix',
+      'Migration données complète',
+      'Formation 8h de vos équipes',
+      'Personnalisations standard',
+      'Support technique 6 mois',
+      'Rapport de suivi mensuel',
+    ],
+    cta: 'Démarrer avec Odoo',
+    calendlyPath: 'odoo-discovery',
+  },
+
+  // ── INTELLIGENCE ARTIFICIELLE ─────────────────────────────────────────────
+  {
+    id: 'ia-audit',
+    category: 'ia',
+    name: 'Audit IA',
+    tagline: 'Point de départ',
+    description: "Identifiez les opportunités IA dans votre entreprise avec notre diagnostic expert.",
+    price: 490,
+    priceLabel: 'CHF 490 — paiement unique',
+    type: 'one_time',
+    features: [
+      'Analyse de vos processus métier',
+      "Identification des cas d'usage IA",
+      'Rapport de recommandations',
+      'Démonstration outils IA',
+      'Feuille de route chiffrée',
+    ],
+    cta: 'Commander mon audit IA',
+    calendlyPath: 'ia-discovery',
+  },
+  {
+    id: 'ia-chatbot',
+    category: 'ia',
+    name: 'Chatbot IA',
+    tagline: '24/7 sans effort',
+    description: 'Assistant IA personnalisé pour votre site web ou WhatsApp Business.',
+    price: 1990,
+    priceLabel: "CHF 1'990 setup + CHF 99/mois",
+    type: 'one_time',
+    popular: true,
+    note: 'CHF 99/mois pour hébergement & maintenance',
+    features: [
+      'Chatbot IA personnalisé',
+      'Intégration site web ou WhatsApp',
+      'Formation sur 2 thématiques',
+      'Tableau de bord conversations',
+      'Mises à jour & évolutions incluses',
+    ],
+    cta: 'Lancer mon chatbot IA',
+    calendlyPath: 'ia-chatbot',
+  },
+  {
+    id: 'ia-automatisation',
+    category: 'ia',
+    name: 'IA Automatisation',
+    tagline: 'Libérez vos équipes',
+    description: 'Automatisez vos processus répétitifs avec une solution IA sur mesure.',
+    price: 3990,
+    priceLabel: 'CHF 3\'990 — projet',
+    type: 'one_time',
+    features: [
+      'Analyse des processus à automatiser',
+      'Développement solution IA',
+      'Intégration dans vos outils existants',
+      'Formation des équipes',
+      'Suivi et optimisation 3 mois',
+    ],
+    cta: 'Automatiser mes processus',
+    calendlyPath: 'ia-discovery',
+  },
+
+  // ── FORMATIONS ────────────────────────────────────────────────────────────
+  {
+    id: 'formation-cyber',
+    category: 'formation',
+    name: 'Formation Cybersécurité',
+    tagline: 'Demi-journée — 4h',
+    description: 'Sensibilisez vos collaborateurs aux bonnes pratiques de sécurité informatique.',
+    price: 290,
+    priceLabel: 'CHF 290 / personne',
+    type: 'one_time',
+    features: [
+      'Phishing & ingénierie sociale',
+      'Mots de passe & authentification',
+      'Sécurité des données',
+      'Support de cours inclus',
+      'Attestation de formation',
+    ],
+    cta: 'Réserver une place',
+    calendlyPath: 'formation',
+  },
+  {
+    id: 'formation-odoo',
+    category: 'formation',
+    name: 'Formation Odoo',
+    tagline: 'Demi-journée — 4h',
+    description: 'Maîtrisez Odoo rapidement avec nos formateurs certifiés.',
+    price: 490,
+    priceLabel: 'CHF 490 / personne',
+    type: 'one_time',
+    popular: true,
+    features: [
+      'Navigation & interface Odoo',
+      'Module(s) au choix',
+      'Exercices pratiques',
+      'Support de cours inclus',
+      'Attestation de formation',
+    ],
+    cta: 'Réserver une place',
+    calendlyPath: 'formation',
+  },
+  {
+    id: 'formation-ia',
+    category: 'formation',
+    name: "Formation IA en entreprise",
+    tagline: 'Demi-journée — 4h',
+    description: "Donnez à vos équipes les clés pour travailler avec l'intelligence artificielle.",
+    price: 390,
+    priceLabel: 'CHF 390 / personne',
+    type: 'one_time',
+    features: [
+      'Les outils IA du quotidien',
+      'Prompt engineering pratique',
+      'IA & productivité bureau',
+      'Éthique & bonnes pratiques',
+      'Attestation de formation',
+    ],
+    cta: 'Réserver une place',
+    calendlyPath: 'formation',
+  },
+]
+
+export const CATEGORIES: { id: ProductCategory; label: string; emoji: string }[] = [
+  { id: 'it-support', label: 'IT Support', emoji: '🖥️' },
+  { id: 'cloud', label: 'Cloud Suisse', emoji: '☁️' },
+  { id: 'audit', label: 'Audits', emoji: '🔍' },
+  { id: 'odoo', label: 'Odoo ERP', emoji: '⚙️' },
+  { id: 'ia', label: 'Intelligence Artificielle', emoji: '✨' },
+  { id: 'formation', label: 'Formations', emoji: '🎓' },
+]
+
+export function getProductsByCategory(category: ProductCategory): Product[] {
+  return PRODUCTS.filter((p) => p.category === category)
+}
