@@ -22,23 +22,22 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse" />
           <span className="text-[13px] font-medium text-white/80 tracking-wide">
-            IT &middot; Odoo ERP &middot; Intelligence Artificielle
+            Votre partenaire informatique en Suisse romande
           </span>
         </div>
 
         {/* H1 */}
         <h1 className="text-[2.75rem] sm:text-[3.5rem] lg:text-[4.5rem] font-extrabold leading-[1.05] tracking-[-0.03em] text-white mb-6">
-          Votre partenaire<br />
-          informatique{' '}
-          <span className="text-brand-400">de confiance</span>
+          On s&apos;occupe de{' '}
+          <span className="text-brand-400">toute votre informatique</span>.
           <br className="hidden sm:block" />
-          en Suisse romande
+          {' '}Vous, de votre métier.
         </h1>
 
         {/* Sub */}
-        <p className="text-lg sm:text-xl text-white/60 leading-relaxed mb-10 max-w-2xl mx-auto">
-          Infrastructure IT, Odoo ERP et Intelligence Artificielle.
-          Un seul interlocuteur, zéro friction.
+        <p className="text-lg sm:text-xl text-white/70 leading-relaxed mb-10 max-w-2xl mx-auto">
+          Ordinateurs, messagerie, logiciels de gestion, sécurité, automatisations avec l&apos;IA —
+          un seul partenaire s&apos;occupe de toute la technique de votre entreprise.
         </p>
 
         {/* CTAs */}

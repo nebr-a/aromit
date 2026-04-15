@@ -31,7 +31,7 @@
       "static/chunks/main-app-56e0fc1423660bdf.js",
       "static/chunks/27-48fae060381012d4.js",
       "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/page-a3214942877889b1.js"
+      "static/chunks/app/page-9b4132286b805afc.js"
     ],
     "/success/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
@@ -40,15 +40,6 @@
       "static/chunks/main-app-56e0fc1423660bdf.js",
       "static/chunks/27-48fae060381012d4.js",
       "static/chunks/app/success/page-d0779504847b3309.js"
-    ],
-    "/ia/page": [
-      "static/chunks/webpack-9b968fa147b37d09.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-6e11c61d0197ed52.js",
-      "static/chunks/main-app-56e0fc1423660bdf.js",
-      "static/chunks/27-48fae060381012d4.js",
-      "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/ia/page-3bda0f63c0214c7d.js"
     ],
     "/tarifs/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
@@ -59,15 +50,6 @@
       "static/chunks/814-2d214a790df59db8.js",
       "static/chunks/app/tarifs/page-628207d60acfa4ed.js"
     ],
-    "/odoo/page": [
-      "static/chunks/webpack-9b968fa147b37d09.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-6e11c61d0197ed52.js",
-      "static/chunks/main-app-56e0fc1423660bdf.js",
-      "static/chunks/27-48fae060381012d4.js",
-      "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/odoo/page-bc38700cd552f913.js"
-    ],
     "/infogerance/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
       "static/chunks/fd9d1056-b11b2651f33aae7f.js",
@@ -76,6 +58,24 @@
       "static/chunks/27-48fae060381012d4.js",
       "static/chunks/814-2d214a790df59db8.js",
       "static/chunks/app/infogerance/page-3351868fa8172f55.js"
+    ],
+    "/ia/page": [
+      "static/chunks/webpack-9b968fa147b37d09.js",
+      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
+      "static/chunks/117-6e11c61d0197ed52.js",
+      "static/chunks/main-app-56e0fc1423660bdf.js",
+      "static/chunks/27-48fae060381012d4.js",
+      "static/chunks/814-2d214a790df59db8.js",
+      "static/chunks/app/ia/page-1b600fc13f0a5667.js"
+    ],
+    "/odoo/page": [
+      "static/chunks/webpack-9b968fa147b37d09.js",
+      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
+      "static/chunks/117-6e11c61d0197ed52.js",
+      "static/chunks/main-app-56e0fc1423660bdf.js",
+      "static/chunks/27-48fae060381012d4.js",
+      "static/chunks/814-2d214a790df59db8.js",
+      "static/chunks/app/odoo/page-80ebdd37b70286dd.js"
     ]
   }
 }
