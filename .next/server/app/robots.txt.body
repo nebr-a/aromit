@@ -1,0 +1,23 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /success/
+Disallow: /_next/
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: anthropic-ai
+Allow: /
+
+Host: https://www.arom.ch
+Sitemap: https://www.arom.ch/sitemap.xml
