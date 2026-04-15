@@ -2,12 +2,12 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/api/checkout/route": "app/api/checkout/route.js",
   "/boutique/page": "app/boutique/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/page": "app/page.js",
   "/success/page": "app/success/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/infogerance/page": "app/infogerance/page.js",
   "/tarifs/page": "app/tarifs/page.js",
   "/ia/page": "app/ia/page.js",
-  "/odoo/page": "app/odoo/page.js",
-  "/infogerance/page": "app/infogerance/page.js"
+  "/odoo/page": "app/odoo/page.js"
 }

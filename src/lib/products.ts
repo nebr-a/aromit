@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
     category: 'cloud',
     name: 'Cloud Start',
     tagline: "Jusqu'à 5 utilisateurs",
-    description: 'Stockage et sauvegarde dans notre datacenter suisse de Montreux.',
+    description: 'Stockage et sauvegarde sur l\'infrastructure Infomaniak (datacenters 100% Suisse).',
     price: 39,
     priceLabel: 'CHF 39 / mois',
     type: 'subscription',

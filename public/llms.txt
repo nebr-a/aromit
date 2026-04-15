@@ -1,6 +1,6 @@
 # AROM IT & Cloud Services
 
-> Partenaire informatique suisse pour PME : infogérance IT, intégration Odoo ERP et solutions Intelligence Artificielle. Basés à Payerne et Lausanne, nous servons toute la Suisse romande depuis 2015. Données hébergées en Suisse (datacenter Montreux), forfaits transparents dès 490 CHF/mois, garantie 90 jours.
+> Partenaire informatique suisse pour PME : infogérance IT, intégration Odoo ERP et solutions Intelligence Artificielle. Basés à Payerne et Lausanne, nous servons toute la Suisse romande depuis 2015. Partenaire officiel Infomaniak — toutes les données sont hébergées sur leurs datacenters 100% suisses. Forfaits transparents dès 490 CHF/mois, garantie 90 jours.
 
 ## Informations clés
 
@@ -11,7 +11,7 @@
 - **Téléphone** : +41 26 508 32 32
 - **Email** : info@arom.ch
 - **Langues** : Français (principal), Anglais
-- **Hébergement** : Datacenter privé à Montreux (Suisse)
+- **Hébergement** : Infrastructure Infomaniak (partenaire officiel) — datacenters 100% Suisse
 
 ## Services principaux
 

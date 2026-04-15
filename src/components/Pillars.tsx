@@ -5,7 +5,7 @@ const pillars = [
   {
     label: 'Infogérance',
     title: 'IT & Cloud Suisse',
-    text: 'Support réactif, réseau, sécurité et hébergement dans notre datacenter à Montreux. Dès 490 CHF/mois.',
+    text: 'Support réactif, réseau, sécurité et hébergement Infomaniak (Suisse). Dès 490 CHF/mois.',
     image: '/images/section-network.jpg',
     href: '/infogerance',
     gradient: 'from-blue-900/90 to-neutral-950/90',

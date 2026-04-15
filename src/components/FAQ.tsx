@@ -4,13 +4,13 @@ import { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
 
 const faqs = [
-  { q: 'Où sont hébergées mes données ?', a: 'Toutes vos données sont hébergées dans notre datacenter à Montreux, en Suisse. Elles ne quittent jamais le territoire suisse.' },
+  { q: 'Où sont hébergées mes données ?', a: 'Toutes vos données sont hébergées sur l\'infrastructure de notre partenaire officiel Infomaniak, dans des datacenters 100% suisses. Elles ne quittent jamais le territoire suisse.' },
   { q: "J'ai besoin d'un devis, est-ce payant ?", a: 'Non. Nos devis et audits initiaux sont gratuits et sans engagement.' },
   { q: "Ai-je besoin d'un carnet d'heures ?", a: "Non. Vous pouvez nous contacter à tout moment. Le carnet d'heures donne simplement accès au tarif réduit." },
   { q: 'Quel est votre temps de réponse ?', a: 'Moins de 2 heures pour les tickets prioritaires. Les clients forfaitaires sont traités en priorité.' },
   { q: 'Proposez-vous la téléphonie ?', a: 'Oui. Certifiés 3CX, nous proposons des solutions VoIP professionnelles avec PBX, ligne mobile et intégration complète.' },
   { q: 'Pouvez-vous reprendre un parc existant ?', a: "Oui. Audit complet puis prise en charge avec un plan de transition sans interruption de service." },
-  { q: "J'ai peur de perdre mes données.", a: 'Sauvegarde automatisée avec rétention configurable, répliquée dans notre datacenter suisse avec tests de restauration réguliers.' },
+  { q: "J'ai peur de perdre mes données.", a: 'Sauvegarde automatisée avec rétention configurable, répliquée sur l\'infrastructure Infomaniak en Suisse, avec tests de restauration réguliers.' },
 ]
 
 const faqSchema = {

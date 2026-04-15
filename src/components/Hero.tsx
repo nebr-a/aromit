@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background image */}
       <img
         src="/images/hero-datacenter.jpg"
-        alt="Datacenter suisse AROM IT — infrastructure IT pour PME en Suisse romande"
+        alt="AROM IT — partenaire informatique pour PME en Suisse romande"
         className="img-cover"
         loading="eager"
         fetchPriority="high"

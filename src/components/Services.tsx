@@ -12,7 +12,7 @@ const services = [
   {
     icon: Cloud,
     title: 'Cloud Privé Suisse',
-    text: 'Hébergement dans notre datacenter de Montreux. Vos données restent en Suisse.',
+    text: 'Hébergement sur l\'infrastructure Infomaniak (Suisse). Vos données ne quittent jamais le pays.',
     span: '',
   },
   {

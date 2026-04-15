@@ -61,7 +61,8 @@ export const metadata: Metadata = {
     'hébergement suisse PME',
     'cybersécurité PME Suisse',
     'sauvegarde cloud suisse',
-    'datacenter Montreux',
+    'partenaire Infomaniak',
+    'hébergement Infomaniak',
     // Brand
     'AROM IT',
     'AROM Cloud Services',

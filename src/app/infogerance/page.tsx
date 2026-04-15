@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const faqs = [
   { q: 'Combien coûte l\'infogérance d\'une PME en Suisse romande ?', a: 'Chez AROM IT, les forfaits d\'infogérance démarrent à 490 CHF/mois (3-5 postes), 990 CHF/mois (6-12 postes) et dès 1\'890 CHF/mois pour le DSI externalisé (15-30 postes). Le tarif horaire ponctuel est de 145 CHF/h, facturé par tranche de 15 minutes.' },
-  { q: 'Vos données sont-elles hébergées en Suisse ?', a: 'Oui. Toutes les données de nos clients sont hébergées dans notre datacenter privé à Montreux, en Suisse. Elles ne quittent jamais le territoire suisse.' },
+  { q: 'Vos données sont-elles hébergées en Suisse ?', a: 'Oui. En tant que partenaire officiel Infomaniak, nous hébergeons l\'intégralité des données de nos clients sur leurs datacenters 100% suisses. Elles ne quittent jamais le territoire suisse.' },
   { q: 'Quelles villes de Suisse romande couvrez-vous ?', a: 'Nous intervenons dans les 6 cantons romands : Vaud, Fribourg, Genève, Neuchâtel, Valais, Jura. Principales villes servies : Lausanne, Genève, Fribourg, Neuchâtel, Sion, Bulle, Yverdon, Morges, Nyon, Vevey, Montreux, Payerne.' },
   { q: 'Quel est votre délai de réponse ?', a: 'SLA contractuel de 2 heures ouvrables sur les forfaits Sérénité et Bouclier, 1 heure sur le DSI Externalisé. Si nous ne tenons pas notre engagement, le mois est offert.' },
   { q: 'Puis-je résilier mon forfait ?', a: 'Engagement minimum 12 mois, résiliable à chaque échéance annuelle avec préavis de 3 mois. Garantie satisfait ou remboursé de 90 jours sur tous les nouveaux contrats.' },
@@ -37,11 +37,11 @@ const faqs = [
 
 const services = [
   { icon: Headphones, title: 'Helpdesk & support', text: 'Tickets illimités, réponse en moins de 2h, intervention sur site en Suisse romande.' },
-  { icon: Cloud, title: 'Cloud privé suisse', text: "Hébergement dans notre datacenter à Montreux. Vos données ne sortent jamais du pays." },
+  { icon: Cloud, title: 'Cloud privé suisse', text: "Hébergement sur l'infrastructure Infomaniak (datacenters suisses). Vos données ne sortent jamais du pays." },
   { icon: Shield, title: 'Cybersécurité', text: 'EDR nouvelle génération, anti-phishing, formation équipe, audits réguliers.' },
   { icon: Server, title: 'Infrastructure & serveurs', text: "Conception, migration, supervision 24/7, maintenance préventive et corrective." },
   { icon: Network, title: 'Réseau & WiFi', text: 'Câblage, switches managés, WiFi pro, VPN, connexions multi-sites sécurisées.' },
-  { icon: Lock, title: 'Sauvegarde & PRA', text: 'Backup automatisé, réplication en datacenter Suisse, plan de reprise testé.' },
+  { icon: Lock, title: 'Sauvegarde & PRA', text: 'Backup automatisé, réplication sur l\'infrastructure Infomaniak (Suisse), plan de reprise testé.' },
 ]
 
 const tiers = [
@@ -137,7 +137,7 @@ export default function InfogerancePage() {
           title="Combien coûte l'infogérance d'une PME en Suisse romande ?"
           answer="Les forfaits d'infogérance AROM IT démarrent à 490 CHF/mois (3-5 postes), 990 CHF/mois (6-12 postes) et dès 1'890 CHF/mois pour le DSI externalisé (15-30 postes). Tarif horaire ponctuel : 145 CHF/h facturé par tranche de 15 min."
           points={[
-            "Données hébergées en Suisse (datacenter Montreux) — elles ne quittent jamais le pays",
+            "Données hébergées en Suisse (infrastructure Infomaniak) — elles ne quittent jamais le pays",
             "SLA contractuel : réponse sous 2h (1h pour le DSI Externalisé)",
             "Garantie Sérénité 90 jours : remboursement intégral si insatisfaction",
             "Intervention sur site dans les 6 cantons romands (VD · FR · GE · NE · VS · JU)",

@@ -30,7 +30,7 @@ const faqs = [
   { q: 'Combien coûte une implémentation Odoo pour une PME en Suisse ?', a: "Chez AROM IT, trois forfaits : Odoo Starter à 4'900 CHF (3 modules, 4 semaines), Odoo Business à 9'900 CHF (6 modules, 6-8 semaines), Odoo Enterprise dès 19'900 CHF (sur mesure, 3-4 mois). La licence Odoo est facturée séparément par Odoo SA." },
   { q: 'La licence Odoo est-elle incluse dans vos forfaits ?', a: "Non, la licence Odoo est facturée en sus par Odoo SA. Trois plans existent : Odoo Community (gratuit, open source), Odoo Standard (~24 CHF/utilisateur/mois, 1 app), Odoo Custom (~37 CHF/utilisateur/mois, apps illimitées + développements). Nous vous conseillons le plan optimal lors de l'audit gratuit." },
   { q: 'Combien de temps prend une intégration Odoo ?', a: "Entre 4 semaines (Starter) et 3-4 mois (Enterprise). La moyenne pour une PME classique est de 6-8 semaines avec le forfait Business." },
-  { q: 'Où sont hébergées les données Odoo ?', a: "Nous hébergeons votre instance Odoo dans notre datacenter privé à Montreux, en Suisse. Vos données ne sortent pas du pays." },
+  { q: 'Où sont hébergées les données Odoo ?', a: "En tant que partenaire officiel Infomaniak, nous hébergeons votre instance Odoo sur leurs datacenters 100% suisses. Vos données ne sortent pas du pays." },
   { q: 'Quels modules Odoo couvrez-vous ?', a: 'Ventes, CRM, Comptabilité, Stock, RH, Marketing, E-commerce, Production, Achats, Facturation, Projets, Maintenance, etc. Odoo compte plus de 40 modules natifs, nous activons uniquement ceux dont vous avez besoin.' },
 ]
 
@@ -98,7 +98,7 @@ const tiers = [
 
 const why = [
   { icon: Zap, title: 'Intégrateur certifié', text: "Partenaire officiel Odoo — nous connaissons la plateforme en profondeur." },
-  { icon: Shield, title: 'Hébergement Suisse', text: "Votre ERP hébergé dans notre datacenter à Montreux. Vos données ne sortent jamais du pays." },
+  { icon: Shield, title: 'Hébergement Suisse', text: "Votre ERP hébergé sur l'infrastructure Infomaniak (datacenters suisses). Vos données ne sortent jamais du pays." },
   { icon: Sparkles, title: 'IA intégrée', text: "Lead scoring, prévisions, automatisations : nous branchons l'IA directement dans votre Odoo." },
 ]
 
@@ -145,7 +145,7 @@ export default function OdooPage() {
           points={[
             "Licence Odoo en sus : Community gratuit · Standard ~24 CHF/user/mois · Custom ~37 CHF/user/mois",
             "Intégrateur Odoo certifié — partenaire officiel depuis plusieurs années",
-            "Hébergement Suisse dans notre datacenter à Montreux",
+            "Hébergement Suisse sur l'infrastructure Infomaniak (partenaire officiel)",
             "Modules couverts : Ventes, CRM, Comptabilité, Stock, RH, Marketing, E-commerce, Production",
             "Paiement en 2 tranches (50% lancement, 50% go-live) — prix figé au contrat",
           ]}

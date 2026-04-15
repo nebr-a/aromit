@@ -5,7 +5,7 @@ const reasons = [
   { icon: MapPin, title: 'Ancrage romand', text: 'Payerne & Lausanne. Intervention rapide sur site.' },
   { icon: Receipt, title: 'Facturation 15 min', text: "Transparent. Pas d'arrondi à l'heure." },
   { icon: Clock, title: 'Réponse < 2h', text: 'Tickets prioritaires traités en moins de 2 heures.' },
-  { icon: Lock, title: 'Données en Suisse', text: 'Datacenter à Montreux. Conformité garantie.' },
+  { icon: Lock, title: 'Données 100% Suisse', text: 'Partenaire Infomaniak — datacenters suisses, conformité garantie.' },
   { icon: Wrench, title: 'Zéro sous-traitance', text: 'Cloud, réseau, téléphonie, sécurité : tout en interne.' },
 ]
 
