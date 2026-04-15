@@ -59,7 +59,7 @@ export default function Hero() {
 
         {/* Trust row */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-16 pt-8 border-t border-white/10">
-          {['Données hébergées en Suisse', 'Datacenter à Montreux', 'Réponse en moins de 2h', 'Certifié 3CX & Odoo'].map((text) => (
+          {['Partenaire Infomaniak · données 100% Suisse', 'Réponse en moins de 2h', 'Certifié 3CX & Odoo', 'PME de Suisse romande'].map((text) => (
             <div key={text} className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-brand-400" />
               <span className="text-[13px] text-white/50 font-medium">{text}</span>

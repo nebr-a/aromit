@@ -89,13 +89,6 @@ export default function SchemaOrg() {
           'https://www.linkedin.com/company/arom-it',
           'https://www.google.com/maps?q=AROM+IT+Payerne',
         ],
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          reviewCount: '47',
-          bestRating: '5',
-          worstRating: '1',
-        },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: 'Services AROM IT',

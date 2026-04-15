@@ -53,6 +53,12 @@ export default function Footer() {
 
         <div className="border-t border-white/[0.06] mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-[11px] text-neutral-600">&copy; {new Date().getFullYear()} AROM IT & Cloud Services</p>
+          <div className="flex items-center gap-3 text-[11px] text-neutral-500">
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-400" />
+              Partenaire officiel <strong className="text-neutral-300 font-semibold">Infomaniak</strong> — données 100% Suisse
+            </span>
+          </div>
           <p className="text-[11px] text-neutral-600">Suisse romande</p>
         </div>
       </div>
