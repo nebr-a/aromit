@@ -10,8 +10,7 @@ const jakarta = Plus_Jakarta_Sans({
   display: 'swap',
 })
 
-// TODO: Replace GTM-XXXXXXX with your real Google Tag Manager ID
-const GTM_ID = 'GTM-XXXXXXX'
+const GTM_ID = 'GTM-WNNP52LK'
 
 const SITE_URL = 'https://www.arom.ch'
 
