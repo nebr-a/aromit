@@ -9,16 +9,16 @@ export default function Footer() {
           <div>
             <img src="/images/logo-arom-white.png" alt="AROM IT" className="h-12 w-auto mb-4" />
             <p className="text-[13px] text-neutral-500 leading-relaxed">
-              Votre partenaire informatique de confiance en Suisse romande depuis 2015.
+              On s&apos;occupe de toute votre informatique. Vous, de votre métier. PME de Suisse romande depuis 2015.
             </p>
           </div>
 
           <div>
             <h4 className="text-[11px] font-bold text-neutral-400 uppercase tracking-widest mb-4">Solutions</h4>
             <ul className="space-y-2.5">
-              <li><Link href="/infogerance" className="text-[13px] text-neutral-500 hover:text-white transition-colors">IT & Cloud Suisse</Link></li>
-              <li><Link href="/odoo" className="text-[13px] text-neutral-500 hover:text-white transition-colors">Intégrateur Odoo</Link></li>
-              <li><Link href="/ia" className="text-[13px] text-neutral-500 hover:text-white transition-colors">Intelligence Artificielle</Link></li>
+              <li><Link href="/infogerance" className="text-[13px] text-neutral-500 hover:text-white transition-colors">Support informatique</Link></li>
+              <li><Link href="/odoo" className="text-[13px] text-neutral-500 hover:text-white transition-colors">Odoo — logiciel de gestion</Link></li>
+              <li><Link href="/ia" className="text-[13px] text-neutral-500 hover:text-white transition-colors">Automatisation avec l&apos;IA</Link></li>
               <li><Link href="/tarifs" className="text-[13px] text-neutral-500 hover:text-white transition-colors">Tarifs</Link></li>
             </ul>
           </div>

@@ -97,16 +97,16 @@ const tiers = [
 ]
 
 const why = [
-  { icon: Zap, title: 'Intégrateur certifié', text: "Partenaire officiel Odoo — nous connaissons la plateforme en profondeur." },
-  { icon: Shield, title: 'Hébergement Suisse', text: "Votre ERP hébergé sur l'infrastructure Infomaniak (datacenters suisses). Vos données ne sortent jamais du pays." },
-  { icon: Sparkles, title: 'IA intégrée', text: "Lead scoring, prévisions, automatisations : nous branchons l'IA directement dans votre Odoo." },
+  { icon: Zap, title: 'Partenaire officiel Odoo', text: "Nous sommes certifiés directement par l'éditeur — nous connaissons l'outil à fond." },
+  { icon: Shield, title: 'Hébergement 100% Suisse', text: "Votre logiciel et toutes vos données restent chez Infomaniak en Suisse. Rien ne sort du pays." },
+  { icon: Sparkles, title: 'IA branchée directement', text: "On peut automatiser le scoring de vos prospects, les relances de factures, la rédaction d'offres — directement dans Odoo." },
 ]
 
 const steps = [
-  { n: '01', title: 'Audit gratuit', desc: 'Analyse de vos processus actuels, identification des quick wins et chiffrage précis.' },
-  { n: '02', title: 'Configuration', desc: 'Paramétrage, migration de vos données existantes, connexion aux outils tiers.' },
-  { n: '03', title: 'Formation', desc: "Sessions sur site avec vos équipes pour une adoption rapide et sans frustration." },
-  { n: '04', title: 'Go-live & support', desc: 'Lancement accompagné puis maintenance continue, évolutions et nouveaux modules à la demande.' },
+  { n: '01', title: 'Audit gratuit', desc: 'On analyse votre façon de travailler aujourd\'hui, on repère les gains rapides et on chiffre précisément.' },
+  { n: '02', title: 'Mise en place', desc: 'Paramétrage du logiciel, reprise de vos données existantes, connexion à vos outils actuels.' },
+  { n: '03', title: 'Formation', desc: "Sessions chez vous avec votre équipe pour qu'ils prennent l'outil en main sans frustration." },
+  { n: '04', title: 'Mise en service & suivi', desc: 'On vous accompagne au démarrage, puis on assure le suivi continu et les évolutions au fil du temps.' },
 ]
 
 export default function OdooPage() {
@@ -134,7 +134,7 @@ export default function OdooPage() {
           image="/images/section-dashboard.jpg"
           overline="Intégrateur Odoo certifié · Suisse romande"
           title={<>Votre entreprise, <span className="text-brand-400">unifiée</span><br/>dans un seul outil</>}
-          subtitle="Fini les exports Excel entre logiciels. Odoo connecte ventes, stock, compta, RH et e-commerce en temps réel. AROM vous accompagne de A à Z."
+          subtitle="Fini les exports Excel entre 5 logiciels. Odoo réunit vos ventes, factures, stocks, RH et boutique en ligne dans un seul outil cohérent — qu'on installe et configure pour vous."
           primaryCta={{ label: 'Discuter de mon projet', href: '/#contact' }}
           secondaryCta={{ label: 'Voir les forfaits', href: '#forfaits' }}
         />

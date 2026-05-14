@@ -39,10 +39,10 @@ export default function ContactCTA() {
           {/* Left */}
           <div>
             <h2 className="text-[1.75rem] sm:text-[2.5rem] font-bold text-white tracking-[-0.02em] mb-4 leading-tight">
-              Prêt à transformer<br />votre IT ?
+              Discutons de<br />votre situation.
             </h2>
             <p className="text-[15px] text-neutral-400 mb-10 max-w-md leading-relaxed">
-              Décrivez-nous vos besoins. Nous vous recontacterons sous 2 heures avec une première analyse gratuite.
+              Dites-nous où ça coince (ou ce que vous voulez améliorer). On vous rappelle sous 2 heures avec un premier diagnostic — gratuit, sans engagement.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -67,7 +67,7 @@ export default function ContactCTA() {
               <div className="text-center py-12">
                 <CheckCircle2 size={48} className="text-green-500 mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-neutral-900 mb-2">Message envoyé</h3>
-                <p className="text-[14px] text-neutral-500">Nous vous recontacterons sous 2 heures.</p>
+                <p className="text-[14px] text-neutral-500">On vous rappelle sous 2 heures.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -92,10 +92,10 @@ export default function ContactCTA() {
                 <div>
                   <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Sujet</label>
                   <select className={inputCls}>
-                    <option>Support IT & Cloud</option>
-                    <option>Projet Odoo ERP</option>
-                    <option>Intelligence Artificielle</option>
-                    <option>Audit gratuit</option>
+                    <option>Support informatique au quotidien</option>
+                    <option>Projet Odoo (logiciel de gestion)</option>
+                    <option>Automatisation avec l&apos;IA</option>
+                    <option>Audit gratuit de mon IT</option>
                     <option>Autre</option>
                   </select>
                 </div>

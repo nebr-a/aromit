@@ -5,9 +5,9 @@ import Link from 'next/link'
 import { Phone, ChevronDown, Menu, X } from 'lucide-react'
 
 const solutions = [
-  { label: 'IT & Cloud Suisse', href: '/infogerance', desc: 'Support, cloud, réseau, sécurité' },
-  { label: 'Intégrateur Odoo', href: '/odoo', desc: 'ERP open source pour PME' },
-  { label: 'Intelligence Artificielle', href: '/ia', desc: 'Chatbots, automatisation, analyse' },
+  { label: 'Support informatique', href: '/infogerance', desc: 'Quelqu\'un qui s\'occupe de votre IT au quotidien' },
+  { label: 'Odoo — logiciel de gestion', href: '/odoo', desc: 'Tout votre business dans un seul outil' },
+  { label: 'Automatisation avec l\'IA', href: '/ia', desc: 'Faire travailler l\'IA pour vous' },
 ]
 
 export default function Header() {

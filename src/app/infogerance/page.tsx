@@ -36,12 +36,12 @@ const faqs = [
 ]
 
 const services = [
-  { icon: Headphones, title: 'Helpdesk & support', text: 'Tickets illimités, réponse en moins de 2h, intervention sur site en Suisse romande.' },
-  { icon: Cloud, title: 'Cloud privé suisse', text: "Hébergement sur l'infrastructure Infomaniak (datacenters suisses). Vos données ne sortent jamais du pays." },
-  { icon: Shield, title: 'Cybersécurité', text: 'EDR nouvelle génération, anti-phishing, formation équipe, audits réguliers.' },
-  { icon: Server, title: 'Infrastructure & serveurs', text: "Conception, migration, supervision 24/7, maintenance préventive et corrective." },
-  { icon: Network, title: 'Réseau & WiFi', text: 'Câblage, switches managés, WiFi pro, VPN, connexions multi-sites sécurisées.' },
-  { icon: Lock, title: 'Sauvegarde & PRA', text: 'Backup automatisé, réplication sur l\'infrastructure Infomaniak (Suisse), plan de reprise testé.' },
+  { icon: Headphones, title: 'Quelqu\'un répond quand ça casse', text: 'Demandes illimitées par téléphone ou e-mail, réponse en moins de 2h, déplacement sur place si besoin.' },
+  { icon: Cloud, title: 'Hébergement 100% Suisse', text: 'Vos fichiers et logiciels chez Infomaniak (Suisse). Vos données ne sortent jamais du pays.' },
+  { icon: Shield, title: 'Protection contre les attaques', text: 'Antivirus pro, blocage des e-mails piégés, formation de votre équipe à reconnaître les arnaques.' },
+  { icon: Server, title: 'Serveurs & ordinateurs', text: "Installation, mises à jour, surveillance 24/7 et entretien pour que rien ne vous lâche en pleine journée." },
+  { icon: Network, title: 'Internet, Wi-Fi et VPN', text: 'Câblage, Wi-Fi pro qui couvre tout votre bureau, connexion sécurisée pour le télétravail et entre sites.' },
+  { icon: Lock, title: 'Sauvegardes automatiques', text: 'Vos données dupliquées chaque jour chez Infomaniak (Suisse). Si quelque chose casse, on restaure.' },
 ]
 
 const tiers = [
@@ -50,13 +50,13 @@ const tiers = [
     price: '490',
     desc: 'Pour TPE de 3 à 5 postes.',
     features: [
-      'Support illimité (tickets + téléphone)',
-      '5h d\'intervention/mois incluses',
-      'Monitoring proactif 24/7',
-      'Mises à jour & patchs sécurité',
-      'Sauvegarde cloud Suisse',
-      'Anti-virus entreprise',
-      'Rapport mensuel',
+      'Demandes illimitées par téléphone et e-mail',
+      '5h d\'intervention sur place incluses par mois',
+      'Surveillance 24/7 de vos serveurs et ordinateurs',
+      'Mises à jour et correctifs de sécurité',
+      'Sauvegardes automatiques (Suisse)',
+      'Antivirus pro sur tous les postes',
+      'Rapport mensuel clair',
     ],
     dark: false,
   },
@@ -65,14 +65,14 @@ const tiers = [
     price: '990',
     desc: 'Pour PME de 6 à 12 postes.',
     features: [
-      'Tout du forfait Sérénité',
-      '12h d\'intervention/mois incluses',
-      'Cybersécurité renforcée (EDR)',
-      'Formation anti-phishing équipe',
-      'Audit sécurité trimestriel',
-      'Interlocuteur technique dédié',
-      'SLA garanti 2h',
-      'Tarif horaire réduit 120 CHF/h',
+      'Tout ce qui est dans Sérénité',
+      '12h d\'intervention sur place incluses par mois',
+      'Protection renforcée contre les attaques',
+      'Formation de votre équipe à repérer les arnaques par e-mail',
+      'Audit sécurité 4 fois par an',
+      'Un technicien dédié qui connaît votre entreprise',
+      'On vous rappelle en moins de 2h, garanti par contrat',
+      'Tarif horaire réduit à 120 CHF/h',
     ],
     dark: true,
     popular: true,
@@ -80,16 +80,16 @@ const tiers = [
   {
     name: 'DSI Externalisé',
     price: "dès 1'890",
-    desc: 'Pour PME de 15 à 30 postes.',
+    desc: 'Pour PME de 15 à 30 postes. On joue le rôle de votre responsable informatique.',
     features: [
-      'Tout du forfait Bouclier',
+      'Tout ce qui est dans Bouclier',
       'Heures illimitées',
-      'Priorité maximale (SLA 1h)',
-      'Stratégie IT & roadmap annuelle',
-      'Comité de pilotage trimestriel',
-      'Audits sécurité mensuels',
-      'Formation équipe illimitée',
-      'Veille technologique',
+      'On vous rappelle en moins d\'1h, garanti par contrat',
+      'Plan informatique annuel pour votre entreprise',
+      'Réunion stratégique tous les 3 mois',
+      'Audit sécurité chaque mois',
+      'Formation de votre équipe illimitée',
+      'Veille sur les nouveaux outils utiles à votre métier',
     ],
     dark: false,
   },
@@ -128,7 +128,7 @@ export default function InfogerancePage() {
           image="/images/section-network.jpg"
           overline="Infogérance IT & Cloud · Suisse romande"
           title={<>Votre IT qui <span className="text-brand-400">ne vous réveille jamais</span> la nuit</>}
-          subtitle="Support, cloud suisse, sécurité, sauvegarde. Un seul interlocuteur, des prix publics, zéro surprise. Vos données restent en Suisse."
+          subtitle="Quand un PC plante, qu'un mail piégé arrive ou que le Wi-Fi tombe — on s'en occupe avant que ça vous coûte des heures. Un seul interlocuteur, prix publics, données en Suisse."
           primaryCta={{ label: 'Demander un audit gratuit', href: '/#contact' }}
           secondaryCta={{ label: 'Voir les forfaits', href: '#forfaits' }}
         />
@@ -137,11 +137,11 @@ export default function InfogerancePage() {
           title="Combien coûte l'infogérance d'une PME en Suisse romande ?"
           answer="Les forfaits d'infogérance AROM IT démarrent à 490 CHF/mois (3-5 postes), 990 CHF/mois (6-12 postes) et dès 1'890 CHF/mois pour le DSI externalisé (15-30 postes). Tarif horaire ponctuel : 145 CHF/h facturé par tranche de 15 min."
           points={[
-            "Données hébergées en Suisse (infrastructure Infomaniak) — elles ne quittent jamais le pays",
-            "SLA contractuel : réponse sous 2h (1h pour le DSI Externalisé)",
-            "Garantie Sérénité 90 jours : remboursement intégral si insatisfaction",
-            "Intervention sur site dans les 6 cantons romands (VD · FR · GE · NE · VS · JU)",
-            "Capacité limitée à 5 nouveaux clients infogérance par trimestre pour garantir la qualité",
+            "Données hébergées en Suisse chez Infomaniak — elles ne quittent jamais le pays",
+            "On vous rappelle en moins de 2h, garanti par contrat (1h sur le forfait DSI Externalisé)",
+            "Garantie 90 jours : pas content, on rembourse intégralement",
+            "Déplacement sur place dans les 6 cantons romands (VD · FR · GE · NE · VS · JU)",
+            "Maximum 5 nouveaux clients par trimestre — pour garder un suivi de qualité",
           ]}
         />
 

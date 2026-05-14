@@ -35,12 +35,12 @@ const faqs = [
 ]
 
 const usecases = [
-  { icon: Bot, title: 'Chatbots & assistants IA', text: "Assistant 24h/24 : SAV, qualification de leads, prise de RDV. Connecté à votre site, WhatsApp, Messenger." },
-  { icon: Workflow, title: 'Automatisation intelligente', text: 'Emails, devis, génération de documents, workflows multi-systèmes — sans intervention humaine.' },
-  { icon: BarChart3, title: 'Analyse & prédiction', text: "Prévisions de ventes, détection d'anomalies, dashboards intelligents en temps réel." },
-  { icon: LayoutGrid, title: 'IA intégrée dans Odoo', text: "Lead scoring, suggestions de réassort, analyse des sentiments — l'IA directement dans votre ERP." },
-  { icon: FileText, title: 'Traitement de documents', text: 'OCR, extraction de données depuis factures/contrats, classification automatique.' },
-  { icon: MessageSquare, title: 'Résumés & recherche', text: 'Synthèse de réunions, recherche sémantique dans vos documents, réponses depuis votre base de connaissances.' },
+  { icon: Bot, title: 'Assistant qui répond 24h/24', text: "Sur votre site, WhatsApp ou Messenger : il répond aux questions clients, qualifie les prospects et prend des rendez-vous, même la nuit." },
+  { icon: Workflow, title: 'Tâches répétitives automatisées', text: 'Réponses standards aux e-mails, rédaction de devis, génération de documents — l\'IA fait le travail à votre place.' },
+  { icon: BarChart3, title: 'Prévisions & alertes', text: "Prévoir les ventes du mois prochain, détecter les anomalies dans vos chiffres, voir l'état de votre activité en un coup d'œil." },
+  { icon: LayoutGrid, title: 'IA branchée dans Odoo', text: "Scoring automatique des prospects, suggestion de réassort de stock, analyse des avis clients — directement dans votre logiciel de gestion." },
+  { icon: FileText, title: 'Lire vos documents à votre place', text: 'L\'IA lit vos factures, contrats et PDF, en extrait les informations clés et les classe automatiquement.' },
+  { icon: MessageSquare, title: 'Résumés & recherche interne', text: 'Résumé automatique des réunions, et un moteur de recherche qui répond à partir de tous vos documents internes.' },
 ]
 
 const tiers = [
@@ -50,11 +50,11 @@ const tiers = [
     duration: '2-3 semaines',
     desc: 'Votre premier projet IA, concret et rapide.',
     features: [
-      '1 chatbot OU 1 automatisation',
-      "Intégration à 1 outil existant (site, email, Odoo...)",
-      'Formation équipe (½ journée)',
-      'Déploiement & mise en production',
-      '30 jours de support',
+      '1 assistant IA ou 1 automatisation',
+      "Branchement sur 1 outil que vous utilisez déjà (site, e-mail, Odoo...)",
+      'Formation de votre équipe (½ journée)',
+      'Mise en production accompagnée',
+      '30 jours de support après lancement',
     ],
     dark: false,
   },
@@ -62,14 +62,14 @@ const tiers = [
     name: 'IA Business',
     price: "6'900",
     duration: '4-6 semaines',
-    desc: 'Plusieurs cas d\'usage combinés.',
+    desc: 'Plusieurs usages combinés dans votre entreprise.',
     features: [
-      'Jusqu\'à 3 cas d\'usage IA',
-      'Intégrations multiples (CRM, ERP, e-mail)',
-      'Dashboard de pilotage',
-      'Formation approfondie',
-      '90 jours de support',
-      'Optimisation continue 1er trimestre',
+      'Jusqu\'à 3 cas d\'usage IA différents',
+      'Branchement sur plusieurs outils (CRM, ERP, e-mail)',
+      'Tableau de bord pour suivre les résultats',
+      'Formation approfondie de l\'équipe',
+      '90 jours de support après lancement',
+      'Optimisation continue le 1er trimestre',
     ],
     dark: true,
     popular: true,
@@ -78,13 +78,13 @@ const tiers = [
     name: 'IA Transformation',
     price: "dès 14'900",
     duration: '2-4 mois',
-    desc: 'Déploiement IA à l\'échelle de la PME.',
+    desc: 'L\'IA déployée dans toute votre entreprise.',
     features: [
-      'Cas d\'usage illimités',
-      'Agents IA sur mesure',
-      'Intégrations API avancées',
-      'Modèles fine-tunés sur vos données',
-      'Conformité & gouvernance',
+      'Nombre d\'usages illimité',
+      'Agents IA sur mesure pour votre métier',
+      'Intégrations avancées avec vos systèmes',
+      'IA spécialisée avec vos propres données',
+      'Mise en conformité et règles d\'utilisation',
       '6 mois de support premium',
     ],
     dark: false,
@@ -92,9 +92,9 @@ const tiers = [
 ]
 
 const benefits = [
-  { icon: Zap, title: 'Gain de temps mesurable', text: 'En moyenne 10-20h / semaine économisées sur les tâches répétitives.' },
-  { icon: Brain, title: 'Pas de buzzwords', text: 'Uniquement des cas d\'usage ROI-positifs. On vous dit non si l\'IA n\'apporte rien.' },
-  { icon: Check, title: 'Données protégées', text: 'Traitement conforme nLPD/RGPD. Hébergement Suisse quand c\'est possible.' },
+  { icon: Zap, title: 'Gain de temps mesurable', text: 'En moyenne 10 à 20 heures par semaine gagnées sur les tâches répétitives, dès le premier mois.' },
+  { icon: Brain, title: 'Pas de bullshit', text: 'On ne fait de l\'IA que là où elle apporte un vrai gain. Sinon, on vous le dit franchement.' },
+  { icon: Check, title: 'Vos données protégées', text: 'Conforme aux lois suisses (nLPD) et européennes (RGPD). Hébergement Suisse autant que possible.' },
 ]
 
 export default function IAPage() {
@@ -121,8 +121,8 @@ export default function IAPage() {
         <PageHero
           image="/images/section-ai.jpg"
           overline="Intelligence Artificielle · Suisse romande"
-          title={<>L&apos;IA qui <span className="text-brand-400">crée de la valeur</span><br/>dès le premier jour</>}
-          subtitle="Pas de buzzwords. Des solutions concrètes, mesurables, intégrées à vos outils existants. De la première automatisation à la transformation complète."
+          title={<>L&apos;IA qui vous <span className="text-brand-400">fait gagner</span> du temps,<br/>pas du blabla</>}
+          subtitle="L'IA branchée directement dans vos outils existants pour automatiser ce qui vous prend des heures aujourd'hui. On démarre petit, on prouve le gain, puis on étend."
           primaryCta={{ label: 'Explorer mon projet IA', href: '/#contact' }}
           secondaryCta={{ label: 'Voir les forfaits', href: '#forfaits' }}
         />
@@ -145,7 +145,7 @@ export default function IAPage() {
             <div className="text-center mb-12">
               <span className="text-[12px] font-bold text-brand-600 uppercase tracking-widest mb-3 block">Cas d&apos;usage</span>
               <h2 className="text-[1.75rem] sm:text-[2.25rem] font-bold text-neutral-900 tracking-[-0.02em] mb-3">
-                Où l&apos;IA apporte un vrai ROI
+                Où l&apos;IA vous fait vraiment gagner du temps
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
