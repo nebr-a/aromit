@@ -6,8 +6,11 @@
   "/robots.txt/route": "app/robots.txt/route.js",
   "/success/page": "app/success/page.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/tarifs/page": "app/tarifs/page.js",
-  "/infogerance/page": "app/infogerance/page.js",
+  "/conditions-generales/page": "app/conditions-generales/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
   "/ia/page": "app/ia/page.js",
-  "/odoo/page": "app/odoo/page.js"
+  "/politique-de-cookies-ue/page": "app/politique-de-cookies-ue/page.js",
+  "/odoo/page": "app/odoo/page.js",
+  "/tarifs/page": "app/tarifs/page.js",
+  "/infogerance/page": "app/infogerance/page.js"
 }

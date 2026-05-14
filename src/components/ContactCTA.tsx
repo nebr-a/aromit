@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Send, Phone, Mail, MapPin, CheckCircle2, Loader2, ArrowRight } from 'lucide-react'
+import { Send, Phone, Mail, MapPin, CheckCircle2, Loader2, AlertTriangle } from 'lucide-react'
 
 function pushConversionEvent() {
   if (typeof window !== 'undefined' && (window as unknown as { dataLayer?: unknown[] }).dataLayer) {
@@ -16,14 +16,42 @@ function pushConversionEvent() {
 export default function ContactCTA() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setError(null)
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 1200))
-    setLoading(false)
-    setSubmitted(true)
-    pushConversionEvent()
+    const form = e.currentTarget
+    const data = new FormData(form)
+    const payload = {
+      firstName: String(data.get('firstName') || ''),
+      lastName: String(data.get('lastName') || ''),
+      email: String(data.get('email') || ''),
+      phone: String(data.get('phone') || ''),
+      subject: String(data.get('subject') || ''),
+      message: String(data.get('message') || ''),
+      website: String(data.get('website') || ''), // honeypot
+    }
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      const json = await res.json().catch(() => ({}))
+      if (!res.ok || !json.ok) {
+        throw new Error(json.error || "Une erreur est survenue. Réessayez ou appelez-nous.")
+      }
+      setSubmitted(true)
+      pushConversionEvent()
+      form.reset()
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Une erreur est survenue.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   const inputCls = "w-full px-4 py-3 rounded-md border border-neutral-200 bg-white text-[14px] text-neutral-900 placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-400 transition-colors"
@@ -70,28 +98,36 @@ export default function ContactCTA() {
                 <p className="text-[14px] text-neutral-500">On vous rappelle sous 2 heures.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+                {/* Honeypot — invisible field to trap bots */}
+                <div className="hidden" aria-hidden="true">
+                  <label>
+                    Site web (ne pas remplir)
+                    <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+                  </label>
+                </div>
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Prénom</label>
-                    <input type="text" required className={inputCls} placeholder="Votre prénom" />
+                    <label htmlFor="firstName" className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Prénom</label>
+                    <input id="firstName" name="firstName" type="text" required className={inputCls} placeholder="Votre prénom" autoComplete="given-name" />
                   </div>
                   <div>
-                    <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Nom</label>
-                    <input type="text" required className={inputCls} placeholder="Votre nom" />
+                    <label htmlFor="lastName" className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Nom</label>
+                    <input id="lastName" name="lastName" type="text" required className={inputCls} placeholder="Votre nom" autoComplete="family-name" />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Email</label>
-                  <input type="email" required className={inputCls} placeholder="votre@email.ch" />
+                  <label htmlFor="email" className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Email</label>
+                  <input id="email" name="email" type="email" required className={inputCls} placeholder="votre@email.ch" autoComplete="email" />
                 </div>
                 <div>
-                  <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Téléphone</label>
-                  <input type="tel" className={inputCls} placeholder="+41 XX XXX XX XX" />
+                  <label htmlFor="phone" className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Téléphone</label>
+                  <input id="phone" name="phone" type="tel" className={inputCls} placeholder="+41 XX XXX XX XX" autoComplete="tel" />
                 </div>
                 <div>
-                  <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Sujet</label>
-                  <select className={inputCls}>
+                  <label htmlFor="subject" className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Sujet</label>
+                  <select id="subject" name="subject" className={inputCls} defaultValue="Audit gratuit de mon IT">
                     <option>Support informatique au quotidien</option>
                     <option>Projet Odoo (logiciel de gestion)</option>
                     <option>Automatisation avec l&apos;IA</option>
@@ -100,9 +136,17 @@ export default function ContactCTA() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Message</label>
-                  <textarea rows={3} required className={`${inputCls} resize-none`} placeholder="Décrivez votre besoin..." />
+                  <label htmlFor="message" className="block text-[13px] font-semibold text-neutral-700 mb-1.5">Message</label>
+                  <textarea id="message" name="message" rows={3} required className={`${inputCls} resize-none`} placeholder="Décrivez votre besoin..." />
                 </div>
+
+                {error && (
+                  <div className="flex items-start gap-2 p-3 rounded-md bg-red-50 border border-red-200">
+                    <AlertTriangle size={16} className="text-red-500 mt-0.5 flex-shrink-0" />
+                    <p className="text-[13px] text-red-700">{error}</p>
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   disabled={loading}
@@ -114,6 +158,10 @@ export default function ContactCTA() {
                     <><Send size={15} /> Envoyer le message</>
                   )}
                 </button>
+
+                <p className="text-[11px] text-neutral-400 text-center pt-1">
+                  En envoyant ce message vous acceptez d&apos;être recontacté par AROM IT. Vos données restent confidentielles.
+                </p>
               </form>
             )}
           </div>

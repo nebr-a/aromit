@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import Script from 'next/script'
 import SchemaOrg from '@/components/SchemaOrg'
+import CookieBanner from '@/components/CookieBanner'
 import './globals.css'
 
 const jakarta = Plus_Jakarta_Sans({
@@ -135,6 +136,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SchemaOrg />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        {/* Google Consent Mode v2 — default to denied, banner updates on user choice */}
+        <Script id="gtm-consent-default" strategy="beforeInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'granted',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+          });`}
+        </Script>
         <Script id="gtm-init" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -153,6 +168,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         </noscript>
         {children}
+        <CookieBanner />
       </body>
     </html>
   )
