@@ -12,7 +12,7 @@
       "static/chunks/fd9d1056-b11b2651f33aae7f.js",
       "static/chunks/117-6e11c61d0197ed52.js",
       "static/chunks/main-app-56e0fc1423660bdf.js",
-      "static/css/8d8e02d550bda5c3.css",
+      "static/css/458b221fd6b694da.css",
       "static/chunks/216-e85b411d6a364aa1.js",
       "static/chunks/app/layout-41786a646e8416d0.js"
     ],
@@ -58,6 +58,15 @@
       "static/chunks/216-e85b411d6a364aa1.js",
       "static/chunks/app/politique-de-cookies-ue/page-91078c47473b72ef.js"
     ],
+    "/tarifs/page": [
+      "static/chunks/webpack-9b968fa147b37d09.js",
+      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
+      "static/chunks/117-6e11c61d0197ed52.js",
+      "static/chunks/main-app-56e0fc1423660bdf.js",
+      "static/chunks/216-e85b411d6a364aa1.js",
+      "static/chunks/985-24b674b67eda60ec.js",
+      "static/chunks/app/tarifs/page-56052d30b9870642.js"
+    ],
     "/infogerance/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
       "static/chunks/fd9d1056-b11b2651f33aae7f.js",
@@ -75,15 +84,6 @@
       "static/chunks/216-e85b411d6a364aa1.js",
       "static/chunks/985-24b674b67eda60ec.js",
       "static/chunks/app/ia/page-92a0c9ad5df7ed9f.js"
-    ],
-    "/tarifs/page": [
-      "static/chunks/webpack-9b968fa147b37d09.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-6e11c61d0197ed52.js",
-      "static/chunks/main-app-56e0fc1423660bdf.js",
-      "static/chunks/216-e85b411d6a364aa1.js",
-      "static/chunks/985-24b674b67eda60ec.js",
-      "static/chunks/app/tarifs/page-56052d30b9870642.js"
     ],
     "/odoo/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",

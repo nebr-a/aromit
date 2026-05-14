@@ -3,14 +3,14 @@
   "/api/checkout/route": "app/api/checkout/route.js",
   "/boutique/page": "app/boutique/page.js",
   "/page": "app/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/success/page": "app/success/page.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/success/page": "app/success/page.js",
   "/conditions-generales/page": "app/conditions-generales/page.js",
   "/api/contact/route": "app/api/contact/route.js",
   "/politique-de-cookies-ue/page": "app/politique-de-cookies-ue/page.js",
+  "/tarifs/page": "app/tarifs/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/infogerance/page": "app/infogerance/page.js",
   "/ia/page": "app/ia/page.js",
-  "/tarifs/page": "app/tarifs/page.js",
   "/odoo/page": "app/odoo/page.js"
 }

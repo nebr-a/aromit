@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -48,29 +48,22 @@ export async function POST(req: Request) {
       return NextResponse.json({ ok: false, error: 'Email invalide.' }, { status: 400 })
     }
 
-    const host = process.env.SMTP_HOST || 'smtp.office365.com'
-    const port = parseInt(process.env.SMTP_PORT || '587', 10)
-    const user = process.env.SMTP_USER
-    const pass = process.env.SMTP_PASSWORD
-    const to = process.env.CONTACT_TO || 'info@arom.ch'
-    const from = process.env.CONTACT_FROM || user || 'info@arom.ch'
+    const apiKey = process.env.RESEND_API_KEY
+    const from = process.env.CONTACT_FROM || 'AROM IT <noreply@arom.ch>'
+    const to = (process.env.CONTACT_TO || 'info@arom.ch')
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean)
 
-    if (!user || !pass) {
-      console.error('[contact] SMTP credentials missing (SMTP_USER / SMTP_PASSWORD).')
+    if (!apiKey) {
+      console.error('[contact] RESEND_API_KEY missing.')
       return NextResponse.json(
         { ok: false, error: 'Configuration serveur incomplète. Réessayez plus tard.' },
         { status: 500 },
       )
     }
 
-    const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure: port === 465, // 465 = SSL implicite ; 587 = STARTTLS (Office 365)
-      requireTLS: port === 587,
-      auth: { user, pass },
-      tls: { ciphers: 'TLSv1.2' },
-    })
+    const resend = new Resend(apiKey)
 
     const fullName = `${firstName} ${lastName}`.trim()
     const safeName = escapeHtml(fullName)
@@ -101,18 +94,26 @@ export async function POST(req: Request) {
       `Nom : ${fullName}\nEmail : ${email}\nTéléphone : ${phone || '—'}\nSujet : ${subject}\n\n` +
       `Message :\n${message}\n`
 
-    await transporter.sendMail({
-      from: `"AROM IT — site web" <${from}>`,
+    const { data, error } = await resend.emails.send({
+      from,
       to,
-      replyTo: `"${fullName}" <${email}>`,
+      replyTo: email,
       subject: `[arom.ch] ${subject} — ${fullName}`,
-      text,
       html,
+      text,
     })
 
-    return NextResponse.json({ ok: true })
+    if (error) {
+      console.error('[contact] Resend error:', error)
+      return NextResponse.json(
+        { ok: false, error: "Une erreur est survenue lors de l'envoi. Réessayez ou appelez-nous." },
+        { status: 500 },
+      )
+    }
+
+    return NextResponse.json({ ok: true, id: data?.id })
   } catch (err) {
-    console.error('[contact] sendMail failed', err)
+    console.error('[contact] handler error:', err)
     return NextResponse.json(
       { ok: false, error: "Une erreur est survenue lors de l'envoi. Réessayez ou appelez-nous." },
       { status: 500 },
