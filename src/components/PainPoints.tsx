@@ -3,9 +3,9 @@
 import { ArrowRight, Clock, ShieldAlert, PhoneOff } from 'lucide-react'
 
 const pains = [
-  { icon: Clock, title: "Votre IT vous freine", text: "Pannes, mises à jour, problèmes réseau — vous gérez une entreprise, pas un département IT." },
-  { icon: ShieldAlert, title: "Cyber-risques croissants", text: "Ransomwares, fuites de données, conformité. Une seule faille peut coûter des milliers de francs." },
-  { icon: PhoneOff, title: "Prestataire injoignable", text: "Tickets sans réponse, délais interminables. Chaque heure perdue vous coûte de l'argent." },
+  { icon: Clock, title: "Vos outils vous ralentissent", text: "Ordinateurs qui rament, Wi-Fi qui coupe, logiciels qui plantent. Vous perdez des heures sur ce qui devrait juste marcher." },
+  { icon: ShieldAlert, title: "La peur du piratage et de la perte de données", text: "Virus, rançongiciels, fuites de données. Une seule attaque peut coûter des milliers de francs et faire fuir vos clients." },
+  { icon: PhoneOff, title: "Personne ne vous rappelle quand ça casse", text: "Vous laissez un message, vous attendez. Pendant ce temps, votre équipe est à l'arrêt et vous perdez de l'argent." },
 ]
 
 export default function PainPoints() {
@@ -37,7 +37,7 @@ export default function PainPoints() {
                 C&apos;est exactement pour ça qu&apos;AROM existe.
               </h3>
               <p className="text-white/70 text-[14px] mb-6 leading-relaxed">
-                Un seul partenaire IT qui répond en moins de 2 heures. Proactif, transparent, basé en Suisse.
+                Un seul partenaire qui répond en moins de 2 heures, qui anticipe les problèmes avant qu&apos;ils n&apos;arrivent et qui vous parle sans jargon.
               </p>
               <a href="#contact" className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-neutral-900 font-semibold rounded-md hover:bg-neutral-100 transition-colors text-[13px]">
                 Parler à un expert <ArrowRight size={13} />

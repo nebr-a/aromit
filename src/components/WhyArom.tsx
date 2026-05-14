@@ -1,12 +1,12 @@
 import { UserCheck, MapPin, Receipt, Clock, Lock, Wrench } from 'lucide-react'
 
 const reasons = [
-  { icon: UserCheck, title: 'Interlocuteur unique', text: 'Un seul contact dédié pour tous vos besoins IT.' },
-  { icon: MapPin, title: 'Ancrage romand', text: 'Payerne & Lausanne. Intervention rapide sur site.' },
-  { icon: Receipt, title: 'Facturation 15 min', text: "Transparent. Pas d'arrondi à l'heure." },
-  { icon: Clock, title: 'Réponse < 2h', text: 'Tickets prioritaires traités en moins de 2 heures.' },
-  { icon: Lock, title: 'Données 100% Suisse', text: 'Partenaire Infomaniak — datacenters suisses, conformité garantie.' },
-  { icon: Wrench, title: 'Zéro sous-traitance', text: 'Cloud, réseau, téléphonie, sécurité : tout en interne.' },
+  { icon: UserCheck, title: 'Un seul interlocuteur', text: 'Une personne qui connaît votre entreprise et qui répond à tous vos besoins.' },
+  { icon: MapPin, title: 'Proches de vous', text: 'Bureaux à Payerne & Lausanne. On se déplace chez vous quand il le faut.' },
+  { icon: Receipt, title: 'Facturé par tranche de 15 min', text: "Vous payez ce qu'on fait, pas une heure entière pour 10 minutes de travail." },
+  { icon: Clock, title: 'Réponse en moins de 2h', text: 'Quand vous nous appelez, on vous recontacte vite. Pas de tickets oubliés.' },
+  { icon: Lock, title: 'Données 100% Suisse', text: 'Partenaire Infomaniak — vos données restent en Suisse, point.' },
+  { icon: Wrench, title: 'Aucune sous-traitance', text: 'Réseau, sécurité, téléphonie, logiciels : tout est fait par notre équipe.' },
 ]
 
 export default function WhyArom() {

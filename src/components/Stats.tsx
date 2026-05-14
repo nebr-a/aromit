@@ -1,7 +1,7 @@
 const stats = [
   { value: '9+', label: "Ans d'expérience" },
   { value: '50+', label: 'PME accompagnées' },
-  { value: '99.9%', label: 'Uptime garanti' },
+  { value: '99.9%', label: 'Disponibilité garantie' },
   { value: '<2h', label: 'Temps de réponse' },
 ]
 

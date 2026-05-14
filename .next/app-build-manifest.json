@@ -31,7 +31,7 @@
       "static/chunks/main-app-56e0fc1423660bdf.js",
       "static/chunks/27-48fae060381012d4.js",
       "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/page-e629ed5ac1030fc8.js"
+      "static/chunks/app/page-d6250066ce01433f.js"
     ],
     "/success/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
@@ -40,24 +40,6 @@
       "static/chunks/main-app-56e0fc1423660bdf.js",
       "static/chunks/27-48fae060381012d4.js",
       "static/chunks/app/success/page-d0779504847b3309.js"
-    ],
-    "/infogerance/page": [
-      "static/chunks/webpack-9b968fa147b37d09.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-6e11c61d0197ed52.js",
-      "static/chunks/main-app-56e0fc1423660bdf.js",
-      "static/chunks/27-48fae060381012d4.js",
-      "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/infogerance/page-3351868fa8172f55.js"
-    ],
-    "/tarifs/page": [
-      "static/chunks/webpack-9b968fa147b37d09.js",
-      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
-      "static/chunks/117-6e11c61d0197ed52.js",
-      "static/chunks/main-app-56e0fc1423660bdf.js",
-      "static/chunks/27-48fae060381012d4.js",
-      "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/tarifs/page-628207d60acfa4ed.js"
     ],
     "/ia/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
@@ -68,6 +50,15 @@
       "static/chunks/814-2d214a790df59db8.js",
       "static/chunks/app/ia/page-1b600fc13f0a5667.js"
     ],
+    "/infogerance/page": [
+      "static/chunks/webpack-9b968fa147b37d09.js",
+      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
+      "static/chunks/117-6e11c61d0197ed52.js",
+      "static/chunks/main-app-56e0fc1423660bdf.js",
+      "static/chunks/27-48fae060381012d4.js",
+      "static/chunks/814-2d214a790df59db8.js",
+      "static/chunks/app/infogerance/page-3351868fa8172f55.js"
+    ],
     "/odoo/page": [
       "static/chunks/webpack-9b968fa147b37d09.js",
       "static/chunks/fd9d1056-b11b2651f33aae7f.js",
@@ -75,7 +66,16 @@
       "static/chunks/main-app-56e0fc1423660bdf.js",
       "static/chunks/27-48fae060381012d4.js",
       "static/chunks/814-2d214a790df59db8.js",
-      "static/chunks/app/odoo/page-80ebdd37b70286dd.js"
+      "static/chunks/app/odoo/page-bc38700cd552f913.js"
+    ],
+    "/tarifs/page": [
+      "static/chunks/webpack-9b968fa147b37d09.js",
+      "static/chunks/fd9d1056-b11b2651f33aae7f.js",
+      "static/chunks/117-6e11c61d0197ed52.js",
+      "static/chunks/main-app-56e0fc1423660bdf.js",
+      "static/chunks/27-48fae060381012d4.js",
+      "static/chunks/814-2d214a790df59db8.js",
+      "static/chunks/app/tarifs/page-628207d60acfa4ed.js"
     ]
   }
 }

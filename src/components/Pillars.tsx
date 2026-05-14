@@ -3,25 +3,25 @@ import { ArrowRight } from 'lucide-react'
 
 const pillars = [
   {
-    label: 'Infogérance',
-    title: 'IT & Cloud Suisse',
-    text: 'Support réactif, réseau, sécurité et hébergement Infomaniak (Suisse). Dès 490 CHF/mois.',
+    label: 'Au quotidien',
+    title: 'Support informatique',
+    text: "Quelqu'un répond quand votre PC plante, votre Wi-Fi tombe ou un mail bloque. Sécurité, sauvegardes et supervision tournent en arrière-plan. Dès 490 CHF/mois.",
     image: '/images/section-network.jpg',
     href: '/infogerance',
     gradient: 'from-blue-900/90 to-neutral-950/90',
   },
   {
-    label: 'ERP Open Source',
-    title: 'Intégrateur Odoo',
-    text: "L'ERP #1 mondial : ventes, compta, stocks et RH unifiés. Forfaits dès 4'900 CHF.",
+    label: 'Logiciel de gestion',
+    title: 'Tout votre business dans Odoo',
+    text: "Un seul logiciel pour les ventes, les factures, les stocks, les clients et les RH. Fini les exports Excel entre 5 outils. Forfaits dès 4'900 CHF.",
     image: '/images/section-dashboard.jpg',
     href: '/odoo',
     gradient: 'from-purple-900/90 to-neutral-950/90',
   },
   {
-    label: 'Innovation',
-    title: 'Intelligence Artificielle',
-    text: "Chatbots, automatisation, analyse prédictive. Premier projet dès 2'900 CHF.",
+    label: 'Automatisation',
+    title: "Faire travailler l'IA pour vous",
+    text: "Répondre aux clients, traiter des documents, automatiser les tâches répétitives. L'IA branchée à vos outils existants. Premier projet dès 2'900 CHF.",
     image: '/images/section-ai.jpg',
     href: '/ia',
     gradient: 'from-teal-900/90 to-neutral-950/90',
@@ -34,10 +34,10 @@ export default function Pillars() {
       <div className="max-w-7xl mx-auto px-4 sm:px-5">
         <div className="text-center pt-16 pb-12">
           <h2 className="text-[1.75rem] sm:text-[2.25rem] font-bold text-white tracking-[-0.02em] mb-3">
-            Trois expertises, un seul partenaire
+            Trois façons de vous simplifier la vie
           </h2>
           <p className="text-[15px] text-neutral-400 max-w-lg mx-auto leading-relaxed">
-            Du poste de travail à l&apos;ERP en passant par l&apos;IA — AROM est votre DSI externalisé.
+            Le support au quotidien, le logiciel qui gère tout votre business, et l&apos;IA pour automatiser le reste. Un seul interlocuteur pour les trois.
           </p>
         </div>
 
