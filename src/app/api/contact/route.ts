@@ -48,8 +48,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ ok: false, error: 'Email invalide.' }, { status: 400 })
     }
 
-    const host = process.env.SMTP_HOST || 'mail.infomaniak.com'
-    const port = parseInt(process.env.SMTP_PORT || '465', 10)
+    const host = process.env.SMTP_HOST || 'smtp.office365.com'
+    const port = parseInt(process.env.SMTP_PORT || '587', 10)
     const user = process.env.SMTP_USER
     const pass = process.env.SMTP_PASSWORD
     const to = process.env.CONTACT_TO || 'info@arom.ch'
@@ -66,8 +66,10 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       host,
       port,
-      secure: port === 465,
+      secure: port === 465, // 465 = SSL implicite ; 587 = STARTTLS (Office 365)
+      requireTLS: port === 587,
       auth: { user, pass },
+      tls: { ciphers: 'TLSv1.2' },
     })
 
     const fullName = `${firstName} ${lastName}`.trim()

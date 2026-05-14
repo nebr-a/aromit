@@ -8,9 +8,9 @@
   "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/conditions-generales/page": "app/conditions-generales/page.js",
   "/api/contact/route": "app/api/contact/route.js",
-  "/ia/page": "app/ia/page.js",
   "/politique-de-cookies-ue/page": "app/politique-de-cookies-ue/page.js",
-  "/odoo/page": "app/odoo/page.js",
+  "/infogerance/page": "app/infogerance/page.js",
+  "/ia/page": "app/ia/page.js",
   "/tarifs/page": "app/tarifs/page.js",
-  "/infogerance/page": "app/infogerance/page.js"
+  "/odoo/page": "app/odoo/page.js"
 }
