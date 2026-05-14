@@ -34,10 +34,10 @@ export default function ServiceAreas() {
         <div className="text-center mb-12">
           <span className="text-[12px] font-bold text-brand-600 uppercase tracking-widest mb-3 block">Zones d&apos;intervention</span>
           <h2 className="text-[1.75rem] sm:text-[2.25rem] font-bold text-neutral-900 tracking-[-0.02em] mb-3">
-            Une équipe IT partout en Suisse romande
+            On est là, partout en Suisse romande
           </h2>
           <p className="text-[15px] text-neutral-500 max-w-xl mx-auto">
-            Intervention à distance sous 2h. Intervention sur site dans les 6 cantons romands.
+            Dépannage à distance sous 2h, déplacement sur place dans les 6 cantons romands.
           </p>
         </div>
 
